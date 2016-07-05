@@ -15,16 +15,23 @@
  */
 // write your code here
 
+func frozen(){
+    print("Let it go!")
+}
 
-
-
+frozen()
 
 /*: question2
  ### 2. Write a function named `frozenAgain` that takes no arguments. Declare a constant in the body of the function, and assign it the value "Let it go!". Then print it to the console.
  */
 // write your code here
 
+func frozenAgain(){
+    let lyric = "Let it go!"
+    print(lyric)
+}
 
+frozenAgain()
 
 
 /*: question3
@@ -32,7 +39,11 @@
  */
 // write your code here
 
+func favCharacter(name name: String){
+    print("My favorite character is \(name).")
+}
 
+favCharacter(name: "Leo")
 
 
 /*: question4
@@ -40,7 +51,17 @@
  */
 // write your code here
 
+let myFav = "Leo"
 
+favCharacter(name: myFav)
+
+var yourFave = "Lorelai"
+
+favCharacter(name: yourFave)
+
+yourFave = "Lisa"
+
+favCharacter(name: yourFave)
 
 
 /*: question5
@@ -48,7 +69,11 @@
  */
 // write your code here
 
+func problems(problemsCount problemsCount: Int){
+    print("I got \(problemsCount) problems, but Swift ain't one.")
+}
 
+problems(problemsCount: 5)
 
 
 /*: question6
@@ -56,7 +81,11 @@
  */
 // write your code here
 
+func myBand(band band: String, bandRank: Int){
+    print("My #\(bandRank) favorite band is \(band).")
+}
 
+myBand(band: "Coheed", bandRank: 1)
 
 
 /*: question7
@@ -66,7 +95,7 @@ func badFavoriteBand(bandName: String, position: Int) {
     print("My #\(position) favorite band is \(bandName).")
 }
 
-badFavoriteBand("The Beatles", 2)
+badFavoriteBand("The Beatles", position:  2)
 
 
 
@@ -74,7 +103,7 @@ badFavoriteBand("The Beatles", 2)
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it?
  */
-func alsoBadFavoriteBand(bandName: String, position: String) {
+func alsoBadFavoriteBand(bandName: String, position: Int) {
     print("My #\(position) favorite band is \(bandName)")
 }
 
@@ -88,7 +117,11 @@ alsoBadFavoriteBand("Blink-182", position: 42)
  */
 // write your code here
 
+func madLib(charName: String, noun: String, preposition: String){
+    print("To \(noun) and \(preposition), \(charName)!")
+}
 
+madLib("Gonzo", noun: "car", preposition: "for")
 
 
 /*: question10
@@ -96,23 +129,34 @@ alsoBadFavoriteBand("Blink-182", position: 42)
  */
 // write your code here
 
+func buzzCall() -> String{
+    return "Buzz Lightyear to the rescue!"
+}
 
-
+buzzCall()
 
 /*: question11
  ### 11. Create a function that takes no arguments and returns any number.
  */
 // write your code here
 
+func youreGettinANumber() -> Int{
+    return 5
+}
 
-
-
+youreGettinANumber()
 /*: question12
  ### 12. Create a function that takes in a characters name. This function will return back a `String` as follows: "To infinity and beyond, <character name>!". The character name should be returned uppercased.
  */
 // write your code here
 
+func buzzSays(name name: String) -> String{
+    let uppercaseName = name.uppercaseString
+    let phrase = "To infinity and beyond, \(uppercaseName)"
+    return phrase
+}
 
+buzzSays(name: "Bob")
 
 
 /*:
